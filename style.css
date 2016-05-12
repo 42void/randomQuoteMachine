@@ -1,12 +1,17 @@
+*{
+  box-sizing: border-box;
+}
+
+
 body{
   background-color: #c8c8c8;
 }
 
-#title{
+/*#title{
   display:flex;
   justify-content:center;
   color: rgb(116, 134, 187);
-}
+}*/
 
 #flexContainer{
   display:flex;
@@ -17,13 +22,67 @@ body{
 }
 
 #quoteContainer{
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   margin-top: 150px;
   width:550px;
   height: 200px;
   background-color: #ffffff;
+  text-align: right;
 }
 
 .icon{
   width: 50px;
   height: 50px;
+}
+
+#quotation{
+    text-align: center;
+    color:#c8c8c8;
+}
+
+#quotation span{
+  font-weight: 600;
+}
+
+#author p{
+  color:#c8c8c8;
+  font-weight: lighter;;
+}
+
+#bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+#socialNetworks{
+    flex:2 0 0;
+    display: flex;
+}
+
+#socialNetworks a{
+    display: block;
+    background-color: #c8c8c8;
+    margin:2px;
+    width: 38px;
+    height: 38px;
+    border-radius: 3px;
+}
+
+#newQuote{
+  flex:1 0 0;
+}
+
+#newQuote button{
+  margin:2px;
+  flex:1 0 0;
+  width: 100px;
+  height: 38px;
+  background-color: #c8c8c8;
+  border-style: none;
+  border-radius: 3px;
+  color:rgb(23, 242, 138);
+
 }
