@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 body{
   background-color: #c8c8c8;
 }
@@ -31,6 +30,7 @@ body{
   height: 200px;
   background-color: #ffffff;
   text-align: right;
+  border-radius: 3px;
 }
 
 .icon{
@@ -58,17 +58,22 @@ body{
 }
 
 #socialNetworks{
-    flex:2 0 0;
-    display: flex;
+  flex:2 0 0;
+  display: flex;
+
 }
 
 #socialNetworks a{
-    display: block;
-    background-color: #c8c8c8;
-    margin:2px;
-    width: 38px;
-    height: 38px;
-    border-radius: 3px;
+  text-align: center;
+  padding-top: 10px;
+  flex-direction: row;
+  background-color: #c8c8c8;
+  margin:2px;
+  width: 38px;
+  height: 38px;
+  border-radius: 3px;
+  color:#fff;
+
 }
 
 #newQuote{
@@ -83,6 +88,17 @@ body{
   background-color: #c8c8c8;
   border-style: none;
   border-radius: 3px;
-  color:rgb(23, 242, 138);
+  color:#fff;
+  font-size: 16px;
+}
+
+#copyright{
+  margin-top: 10px;
+  color:#fff;
+  font-weight: lighter;
+  text-align: center;s
+}
+
+#trigger{
 
 }
