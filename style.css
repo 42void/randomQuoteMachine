@@ -27,7 +27,7 @@ body{
   padding-bottom: 30px;
   margin-top: 150px;
   width:550px;
-  height: 200px;
+  height: auto;
   background-color: #ffffff;
   text-align: right;
   border-radius: 3px;

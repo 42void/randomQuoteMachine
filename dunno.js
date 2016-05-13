@@ -10,19 +10,30 @@ $(document).ready(function() {
         $("#quotation").css("color",hue);
         $("#author p").css("color",hue);
 
-        $.getJSON("http://quotes.rest/qod.json", function(json) {
+        // var cmbApi = "http://api.icndb.com/jokes/1"
+        //
+        // $.getJSON("quotations.js", function(json){
+        //     console.log(json.author);
+        // });
 
-               var html = "";
+        $.ajax({
+            url: "http://api.icndb.com/jokes/",
+            dataType: 'json',
+            success: function(results){
+                var joke = results.value[Math.floor((Math.random() * 30) + 1)].joke;
 
-                $.each(function(val) {
-       //           html += "<div class = 'cat'>"
-       //           html += "<img src = '" + val.imageLink + "'>"
-       //           html += "</div>"
-                    html += "val.quote"
-                    console.log(html);
-               });
-               $(".quotation").html(html);
-             });
+                $('.quotation').html(joke);
+            }
+        });
 
+
+      // $(quotation).html(json.quotations.author);
       });
  });
+
+//var quotations='{"quotations": { "quote": "Jeffrey", "author": "Giraffe"}, }';
+
+
+// var json=JSON.parse(quotations);
+// console.log(json);
+// console.log(json.quotations.author);
