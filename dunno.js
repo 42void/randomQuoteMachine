@@ -21,8 +21,9 @@ $(document).ready(function() {
             dataType: 'json',
             success: function(results){
                 var joke = results.value[Math.floor((Math.random() * 30) + 1)].joke;
-
+                var author = results.value.categories; ///??
                 $('.quotation').html(joke);
+                $('.author').html(categorie); /// ?
             }
         });
 
