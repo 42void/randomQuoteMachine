@@ -1,2 +1,2 @@
 # randomQuoteMachine
-Random Quote Machine
+Random Chuck Norris quotes machine
