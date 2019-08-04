@@ -6,12 +6,6 @@ body{
   background-color: #c8c8c8;
 }
 
-/*#title{
-  display:flex;
-  justify-content:center;
-  color: rgb(116, 134, 187);
-}*/
-
 #flexContainer{
   display:flex;
   flex-direction: row;
@@ -96,9 +90,5 @@ body{
   margin-top: 10px;
   color:#fff;
   font-weight: lighter;
-  text-align: center;s
-}
-
-#trigger{
-
+  text-align: center;
 }
